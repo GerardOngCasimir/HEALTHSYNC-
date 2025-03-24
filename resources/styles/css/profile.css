@@ -1,47 +1,58 @@
 .profile-details{
     display: flex;
-    gap: 20px;
+    gap: 40px;
+    align-items: flex-start;
 }
 
 .profile-pic{
     background: white;
     padding: 20px;
-    border-radius: 8px;
-    
+    border-radius: 10px;
     text-align: center;
+    width: 180px;
 }
 
 .profile-pic img{
     width: 120px;
     height: 120px;
-    border-radius: 10%;
+    border-radius: 8px;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .profile-pic button{
     display: block;
-    margin: 5px auto;
-    background: #0017e6;
+    margin: 6px 0;
+    background-color: #005aff;
     color: white;
     border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
+    padding: 8px 16px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 14px;
+    width: 100%;
 }
 
 .profile-info{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
+    gap: 30px;
+    width: 100%;
 }
 
 .profile-column{
-    padding: 10px;
-    border-right: 1px solid #ddd;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 1px solid #eee;
+    padding-bottom: 5px;
+
+}
+
+.profile-column p{
+    font-size: 15px;
+    color: #333;
+    margin: 8px 0;
 }
 
 .profile-column :last-child{
@@ -52,45 +63,56 @@
     color: #005aff;
 }
 
-.sync-button-container{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    align-items: flex-end;
-}
-
-.sync-button{
+.sync-button {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 12px 0px;
+    padding: 14px 0px;
     background-color: #e60012; 
     color: white;
     border: none;
     border-radius: 8px;
-    font-size: 10px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease;
-    width: 190px;
-    height: 30px;
+    width: 350px;
+    height: 60px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    
 }
-
-.sync-button img{
-    width: 100px; 
-    height: 30px;
+ 
+/* Outer wrapper to apply the unified shadow smoothly */
+.sync-button-container {
+    justify-content: center;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    box-shadow:0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align:center;
+    width: 340px;
+    max-width: 90%;
+    animation: fadeIn 0.8s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+/* Image box */
+.sync-button img {
+    width: 135px; 
+    height: 61px;
     object-fit: contain;
     border-radius: 6px 0 0 6px;
     background: white; 
     padding: 2px;
     margin-right: 2px;
-      
 }
-
-
+ 
+/* Text section */
 .sync-button span {
     white-space: nowrap;
     flex-grow: 1;
 }
+
