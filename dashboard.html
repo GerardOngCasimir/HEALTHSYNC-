@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | NTTD HealthSync</title>
+    <link rel="stylesheet" href="resources/styles/css/dashboard.css">
+    <script defer src="resources/js/dashboard.js"></script>
+</head>
+<body>
+ 
+    <!-- ✅ Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>NTTD HEALTHSYNC</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"> Dashboard</a></li>
+                <li><a href="#">Apply for Medical Assessment</a></li>
+                <li><a href="#">Notify Decrease in Medical Fitness</a></li>
+                <li><a href="#">Personal Health Appraisal</a></li>
+               
+                
+            </ul>
+        </nav>
+    </aside>
+ 
+    <!-- ✅ Main Content Section -->
+    <div class="main-content">
+        <!-- ✅ Header Section -->
+        <header class="dashboard-header">
+            <h1>Welcome Back, <span class="username">John Doe</span></h1>
+           <a href="profile.html" ><div class="user-profile">
+                <img src="resources/img/user-avatar.png" alt="User Avatar">
+                <span>John Doe ⏷</span>
+            </div>
+          </a>
+        </header>
+ 
+       
+ 
+<!-- ✅ Notifications Table -->
+<section class="notifications">
+    <h2>Notifications</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Message</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="notifications-list">
+            <tr>
+                <td>10 Mar 2025</td>
+                <td>Medical Update</td>
+                <td>Your assessment is approved</td>
+                <td><button>View</button></td>
+            </tr>
+            <tr></tr>
+                <td>8 Mar 2025</td>
+                <td>Alert</td>
+                <td>Please update your health status</td>
+                <td><button>View</button></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+ 
+<!-- ✅ Recent Activities Table -->
+<section class="recent-activities">
+    <h2>Recent Activities</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Activity</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="activities-list">
+            <tr>
+                <td>5 Mar 2025</td>
+                <td>Applied for Assessment</td>
+                <td>Pending</td>
+                <td><button>Cancel</button></td>
+            </tr>
+            <tr></tr>
+                <td>2 Mar 2025</td>
+                <td>Updated Health Status</td>
+                <td>Completed</td>
+                <td><button>View</button></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    </div>
+ 
+</body>
+</html>
+ 

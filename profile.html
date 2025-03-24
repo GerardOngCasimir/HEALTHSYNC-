@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | NTTD HealthSync</title>
+    <link rel="stylesheet" href="resources/styles/css/dashboard.css">
+    <link rel="stylesheet" href="resources/styles/css/profile.css">
+    <script defer src="resources/js/dashboard.js"></script>
+</head>
+    <body>
+         <!-- ✅ Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>NTTD HEALTHSYNC</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html"> Dashboard</a></li>
+                <li><a href="#">Apply for Medical Assessment</a></li>
+                <li><a href="#">Notify Decrease in Medical Fitness</a></li>
+                <li><a href="#">Personal Health Appraisal</a></li>
+               
+                
+            </ul>
+        </nav>
+    </aside>
+ 
+    <!-- ✅ Main Content Section -->
+    <div class="main-content">
+        <!-- ✅ Header Section -->
+        <header class="dashboard-header">
+            <h1>Your Profile, <span class="username">John Doe</span></h1>
+            <div class="sync-button-container">
+                <button class="sync-button">
+                    <img src="resources/img/singpass-logo.png" alt="">
+                    <span>Sync from MyInfo</span>
+                </button>
+            </div>
+           <a href="profile.html" ><div class="user-profile">
+                <img src="resources/img/user-avatar.png" alt="User Avatar">
+                <span>John Doe ⏷</span>
+            </div>
+          </a>
+        </header>
+       <section class="profile-details">
+        <div  class="profile-pic">
+            <img src="resources/img/user-avatar.png" alt="">
+            <input type="file" name="upload-pic" id="" hidden>
+            <button id="upload-btn">Upload</button>
+            <button id="view-butn">View</button>
+        </div>
+        <div class="profile-info">
+            <div class="profile-column">
+                <h2>Personal Information</h2>
+                <p><strong>Name:</strong>John Doe</p>
+                <p><strong>Age:</strong>32</p>
+                <p><strong>Gender:</strong>Male</p>
+            </div>
+            <div class="profile-column">
+                <h2>Contact Details</h2>
+            <p><strong>Email:</strong>johndoe@example.com</p>
+            <p><strong>Phone:</strong> +65 12345678</p>
+            </div>
+            <div class="profile-column">
+                <h2>Job Information</h2>
+                <p><strong>Job Rank:</strong>SPF NSMEN</p>
+                <p><strong>Department:</strong>Police Licencing & Reg Dept</p>
+                <p><strong>Enlistment Date</strong> 31 Aug 2002</p>
+            </div>
+            
+        </div>
+        
+       </section>
+    </body>
+</html>

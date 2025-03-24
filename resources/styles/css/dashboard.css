@@ -1,0 +1,169 @@
+/* ✅ General Layout */
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    color: #1e1e2f;
+    display: flex;
+    margin: 0;
+}
+ 
+/* ✅ Sidebar */
+.sidebar {
+    width: 220px;
+    background: white;
+    background-color: beige;
+    padding: 20px;
+    padding-top: 5px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 220px;
+    width: calc(100 -220px);
+    padding: 20px;
+}
+ 
+.sidebar-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ 
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+ 
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+ 
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #1e1e2f;
+    padding: 12px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+ 
+.sidebar nav ul li a:hover, .sidebar nav ul li .active {
+    background: #005aff;
+    color: white;
+}
+ 
+.logout-btn {
+    background: #e60012;
+    color: white;
+    border-radius: 5px;
+    padding: 12px;
+    text-align: center;
+    display: block;
+}
+ 
+/* ✅ Main Content */
+.main-content {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 10px;
+}
+ 
+/* ✅ Dashboard Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 2px 0 0 12px;
+    color:#12121e ;
+}
+ 
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ 
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+ 
+/* ✅ Quick Actions */
+.quick-actions {
+    margin-top: 20px;
+}
+ 
+.actions-grid {
+    display: flex;
+    gap: 15px;
+}
+ 
+.action-card {
+    background: #2e3245;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    width: 250px;
+    color: white;
+}
+ 
+/* ✅ Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Prevents column shifting */
+    margin-top: 15px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+ 
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word; /* Prevents text from overflowing */
+}
+ 
+th {
+    background: #005aff;
+    color: white;
+}
+ 
+td button {
+    padding: 6px 12px;
+    background: #e60012;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+th:nth-child(1), td:nth-child(1) { width: 15%; } /* Date */
+th:nth-child(2), td:nth-child(2) { width: 20%; } /* Type/Activity */
+th:nth-child(3), td:nth-child(3) { width: 45%; } /* Message/Status */
+th:nth-child(4), td:nth-child(4) { width: 20%; text-align: center; } /* Action */
+
+.notifications{
+    padding-left: 12px;
+}
+
+.recent-activities{
+    padding-left: 12px;
+}
+
+a{
+    text-decoration: none;
+}
